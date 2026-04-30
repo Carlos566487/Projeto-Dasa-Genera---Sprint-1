@@ -12,6 +12,23 @@
 
 ---
 
+## EQUIPE FIAP 
+## 👨‍🎓 Integrantes: 
+
+| Nome | RM | Contribuição |
+|---|---:|---|
+| Tayná Esteves | RM562491 | Product Owner / Negócio |
+| João | RM565999 | Engenheiro de Dados (PDF → Estrutura) |
+| Carlos Eduardo | RM566487 | Especialista em IA |
+| Endrew Alves | RM563646 | Arquiteto + Front-end |
+
+## 👩‍🏫 Professores:
+### Tutor(a) 
+- <a href="https://www.linkedin.com/in/john-paul-lima/">JOHN PAUL LIMA</a>
+### Coordenador(a)
+- <a href="https://www.linkedin.com/in/andregodoichiovato/">ANDRÉ GODOI CHIOVATO</a>
+
+
 ## 1. Problema
 
 Os relatórios genéticos do produto Genera, da Dasa, concentram informações extremamente valiosas sobre saúde, como predisposição a doenças e características genéticas.
@@ -473,15 +490,7 @@ Como evolução futura, a solução pode incluir integração com profissionais 
 ---
 
 > 📹 **Vídeo de apresentação:** *(link a ser adicionado)*
->
 
-> 👥 **Integrantes do grupo:** *(nomes a serem adicionados)*
 
-| Nome | RM | Contribuição |
-|---|---:|---|
-| Tayná Esteves | RM562491 | Product Owner / Negócio |
-| João | RM565999 | Engenheiro de Dados (PDF → Estrutura) |
-| Carlos Eduardo | RM566487 | Especialista em IA |
-| Endrew Alves | RM563646 | Arquiteto + Front-end |
 
 
