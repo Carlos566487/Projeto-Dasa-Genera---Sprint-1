@@ -115,11 +115,7 @@ Queremos transformar dados genéticos em uma experiência inteligente, acessíve
 
 ## 7. Estruturação dos Dados
 
-Após o upload do relatório genético em PDF, o sistema deverá extrair as informações relevantes e organizá-las em um formato estruturado.
-
-A proposta é converter os dados do PDF para um formato JSON, separando informações como categoria, condição analisada, nível de risco, descrição e recomendação.
-
-Essa estrutura permite que a Inteligência Artificial utilize os dados de forma mais precisa para gerar explicações, respostas e recomendações personalizadas.
+Após o upload do relatório genético em PDF, o sistema deverá extrair as informações relevantes e organizá-las em um formato estruturado. A proposta é converter os dados do PDF para um formato JSON, separando informações como categoria, condição analisada, nível de risco, descrição e recomendação.
 
 ### 🧪 Exemplo de JSON
 
@@ -180,9 +176,7 @@ Essa estrutura permite que a Inteligência Artificial utilize os dados de forma 
 
 > **Especialista em IA**
 
-A Inteligência Artificial é o núcleo da solução, responsável por transformar dados genéticos estruturados em respostas claras, personalizadas e úteis para o usuário.
-
-Diferente de abordagens tradicionais, a IA não trabalha diretamente com o PDF bruto, mas sim com dados organizados em JSON, garantindo maior precisão, controle e confiabilidade nas respostas.
+A Inteligência Artificial é o núcleo da solução, responsável por transformar dados genéticos estruturados em respostas claras, personalizadas e úteis para o usuário. Diferente de abordagens tradicionais, a IA não trabalha diretamente com o PDF bruto, mas sim com dados organizados em JSON, garantindo maior precisão, controle e confiabilidade nas respostas.
 
 ---
 
@@ -216,6 +210,20 @@ A abordagem RAG garante que **cada resposta seja baseada no relatório real do u
 ---
 
 ### 8.3 Integração da IA no Pipeline
+
+O pipeline abaixo detalha como a pergunta do usuário e os dados estruturados do relatório convergem através da arquitetura RAG (Retrieval-Augmented Generation) para gerar uma resposta segura e personalizada.
+
+Fluxo Geral de Processamento:
+
+Upload: O usuário envia o relatório em PDF.
+
+Backend: Extração de texto e estruturação em JSON.
+
+Vetorização: Geração de embeddings e armazenamento em Vector Database (Pinecone/ChromaDB).
+
+Interação: O usuário faz uma pergunta que é comparada semanticamente com os dados do relatório.
+
+LLM: O modelo (GPT-4o/Claude) recebe o contexto específico e gera a resposta.
 
 ![Fluxo de IA RAG Genera](docs/images/Code_Generated_Image.png)
 
@@ -345,8 +353,8 @@ Por se tratar de dados sensíveis de saúde, o sistema adota regras rígidas de 
 
 | Regra | Descrição |
 |---|---|
-| ❌ Sem diagnósticos | A IA nunca afirma que o usuário "tem" uma doença |
-| ❌ Sem prescrições | A IA nunca recomenda medicamentos ou tratamentos clínicos |
+| ✅ Sem diagnósticos | A IA nunca afirma que o usuário "tem" uma doença |
+| ✅ Sem prescrições | A IA nunca recomenda medicamentos ou tratamentos clínicos |
 | ✅ Encaminhamento profissional | Toda resposta relevante inclui recomendação de consulta médica |
 | ✅ Respostas rastreáveis | Toda resposta é baseada nos dados do próprio relatório do usuário |
 | ✅ Linguagem responsável | Riscos são apresentados com contexto, sem alarmismo |
