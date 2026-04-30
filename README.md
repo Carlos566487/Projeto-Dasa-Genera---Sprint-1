@@ -217,6 +217,8 @@ A abordagem RAG garante que **cada resposta seja baseada no relatório real do u
 
 ### 8.3 Integração da IA no Pipeline
 
+![Fluxo de IA RAG Genera](docs/images/pipeline_rag_v2.svg)
+
 ```
 Usuário
    ↓
